@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Inventaris App',
+      title: 'Inventaris Applikasi',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
         useMaterial3: true,
@@ -30,4 +30,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
