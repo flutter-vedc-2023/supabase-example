@@ -36,7 +36,7 @@ class _UpdateItemPageState extends State<UpdateItemPage> {
       appBar: AppBar(
         automaticallyImplyLeading: true,
         elevation: 0,
-        title: const Text('Tambah Barang'),
+        title: const Text('Update Barang'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
@@ -73,13 +73,15 @@ class _UpdateItemPageState extends State<UpdateItemPage> {
                   // show dialog
                   showDialog(
                     context: context,
-                    barrierDismissible: false, // Prevent user from dismissing the dialog
+                    barrierDismissible:
+                        false, // Prevent user from dismissing the dialog
                     builder: (BuildContext context) {
                       return const AlertDialog(
                         content: Column(
                           mainAxisSize: MainAxisSize.min,
                           children: <Widget>[
-                            CircularProgressIndicator.adaptive(), // Circular Progress Indicator
+                            CircularProgressIndicator
+                                .adaptive(), // Circular Progress Indicator
                             SizedBox(height: 16.0),
                             Text('Loading...'),
                           ],
